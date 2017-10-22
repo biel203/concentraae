@@ -1,0 +1,51 @@
+{
+  "name": "ConcentraAmbienteDeEstudos",
+  "version": "0.0.1",
+  "private": true,
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "theme",
+    "template"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "body-parser": "~1.16.0",
+    "cloudrail-si": "^2.17.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "jade": "~1.11.0",
+    "jquery": "^3.2.1",
+    "morgan": "~1.7.0",
+    "passport": "^0.3.2",
+    "serve-favicon": "~2.3.2",
+    "bootstrap": "^4.0.0-beta.2",
+    "font-awesome": "4.7.0",
+    "jquery.easing": "^1.4.1",
+    "magnific-popup": "^1.1.0",
+    "scrollreveal": "3.3.6"
+  },
+  "license": "MIT",
+  "author": "Gabriel Stein",
+  "contributors": [],
+  "devDependencies": {
+    "browser-sync": "2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "3.7.0",
+    "gulp-header": "1.8.9",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}

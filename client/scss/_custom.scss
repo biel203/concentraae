@@ -1,0 +1,24 @@
+@font-face {
+  font-family: Concentra;
+  src: url(/public/font/fonte.ttf);
+  src: url(/public/font/fonte-semibold.ttf);
+}
+
+header .custom-subtitle {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+header.masthead img.header-background-logo{
+  width: 12%;
+  margin: 10px
+}
+
+.container .service-box img {
+  width: 25%;
+}
+
+#portfolio .popup-gallery a:hover{
+  padding : 10px
+}

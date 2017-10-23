@@ -1,6 +1,38 @@
 (function($) {
   "use strict"; // Start of use strict
 
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    setInterval(function () {
+        showDivs();
+        console.log('passou')
+    }.bind(this), 5000);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+
+        if (slideIndex > x.length - 1) {
+          console.log('no IF ' + slideIndex);
+          console.log(x.length);
+          slideIndex = 1;
+        };
+
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+        console.log(x[slideIndex-1]);
+        slideIndex += 1;
+        console.log(slideIndex)
+
+    }
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

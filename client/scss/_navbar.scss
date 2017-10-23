@@ -5,10 +5,15 @@
   @include sans-serif-font;
   @include transition-all;
   .navbar-brand {
+    a {
+      img {
+        width: 40px;
+      }
+    }
     font-weight: 700;
     text-transform: uppercase;
     color: $theme-primary;
-    @include sans-serif-font;
+    font-family: Concentra;
     &:focus,
     &:hover {
       color: darken($theme-primary, .1);
@@ -45,6 +50,10 @@
     border-color: fade-out(white, .7);
     background-color: transparent;
     .navbar-brand {
+      img {
+        width: 40px;
+      }
+      opacity: 0;
       color: fade-out(white, .3);
       &:focus,
       &:hover {
@@ -53,20 +62,21 @@
     }
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: fade-out(white, .3);
+      color: fade-out(black, .3);
       &:hover {
-        color: white;
+        color: black;
       }
     }
     &.navbar-shrink {
       border-color: fade-out($gray-darker, .95);
       background-color: white;
       .navbar-brand {
+        opacity: 1;
         font-size: 16px;
-        color: $theme-primary;
+        color: #b9b9b9;
         &:focus,
         &:hover {
-          color: darken($theme-primary, .1);
+          color: darken(#b9b9b9, .1);
         }
       }
       .navbar-nav > li.nav-item > a.nav-link,

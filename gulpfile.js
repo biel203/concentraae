@@ -18,12 +18,12 @@ var banner = ['/*!\n',
 
 // Compiles SCSS files from /scss into /css
 gulp.task('sass', function() {
-  return gulp.src('scss/creative.scss')
+  return gulp.src('./client/scss/creative.scss')
     .pipe(sass())
     .pipe(header(banner, {
       pkg: pkg
     }))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('./client/css'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -31,14 +31,14 @@ gulp.task('sass', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['sass'], function() {
-  return gulp.src('css/creative.css')
+  return gulp.src('./client/css/creative.css')
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('./client/css'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -46,7 +46,7 @@ gulp.task('minify-css', ['sass'], function() {
 
 // Minify custom JS
 gulp.task('minify-js', function() {
-  return gulp.src('js/creative.js')
+  return gulp.src('./client/js/creative.js')
     .pipe(uglify())
     .pipe(header(banner, {
       pkg: pkg
@@ -54,7 +54,7 @@ gulp.task('minify-js', function() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('js'))
+    .pipe(gulp.dest('./client/js'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -69,22 +69,22 @@ gulp.task('copy', function() {
       '!**/bootstrap-theme.*',
       '!**/*.map'
     ])
-    .pipe(gulp.dest('vendor/bootstrap'))
+    .pipe(gulp.dest('./client/vendor/bootstrap'))
 
   gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
-    .pipe(gulp.dest('vendor/jquery'))
+    .pipe(gulp.dest('./client/vendor/jquery'))
 
   gulp.src(['node_modules/magnific-popup/dist/*'])
-    .pipe(gulp.dest('vendor/magnific-popup'))
+    .pipe(gulp.dest('./client/vendor/magnific-popup'))
 
   gulp.src(['node_modules/scrollreveal/dist/*.js'])
-    .pipe(gulp.dest('vendor/scrollreveal'))
+    .pipe(gulp.dest('./client/vendor/scrollreveal'))
 
   gulp.src(['node_modules/popper.js/dist/umd/popper.js', 'node_modules/popper.js/dist/umd/popper.min.js'])
-    .pipe(gulp.dest('vendor/popper'))
+    .pipe(gulp.dest('./client/vendor/popper'))
 
   gulp.src(['node_modules/jquery.easing/*.js'])
-    .pipe(gulp.dest('vendor/jquery-easing'))
+    .pipe(gulp.dest('./client/vendor/jquery-easing'))
 
   gulp.src([
       'node_modules/font-awesome/**',
@@ -94,7 +94,7 @@ gulp.task('copy', function() {
       '!node_modules/font-awesome/*.md',
       '!node_modules/font-awesome/*.json'
     ])
-    .pipe(gulp.dest('vendor/font-awesome'))
+    .pipe(gulp.dest('./client/vendor/font-awesome'))
 })
 
 // Default task
@@ -111,10 +111,10 @@ gulp.task('browserSync', function() {
 
 // Dev task with browserSync
 gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() {
-  gulp.watch('scss/*.scss', ['sass']);
-  gulp.watch('css/*.css', ['minify-css']);
-  gulp.watch('js/*.js', ['minify-js']);
+  gulp.watch('./client/scss/*.scss', ['sass']);
+  gulp.watch('./client/css/*.css', ['minify-css']);
+  gulp.watch('./client/js/*.js', ['minify-js']);
   // Reloads the browser whenever HTML or JS files change
-  gulp.watch('*.html', browserSync.reload);
-  gulp.watch('js/**/*.js', browserSync.reload);
+  gulp.watch('./client/*.html', browserSync.reload);
+  gulp.watch('./client/js/**/*.js', browserSync.reload);
 });

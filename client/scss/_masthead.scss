@@ -5,14 +5,20 @@ header.masthead {
   min-height: auto;
   text-align: center;
   color: white;
-  background-image: url('../img/header.jpg');
+  //background-image: url('../img/portfolio/fullsize/7.jpg');
   background-position: center;
   @include background-cover;
+
+  .mySlides {
+    width: 100%;
+    height: inherit;
+  }
   .header-content {
     position: relative;
     width: 100%;
     padding: 150px 15px 100px;
     text-align: center;
+
     .header-content-inner {
       h1 {
         font-size: 30px;

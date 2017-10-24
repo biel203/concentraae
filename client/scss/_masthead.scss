@@ -10,9 +10,10 @@ header.masthead {
   @include background-cover;
 
   .mySlides {
-    width: 100%;
-    height: inherit;
-  }
+     width: 100%;
+     height: inherit;
+   }
+
   .header-content {
     position: relative;
     width: 100%;
@@ -41,6 +42,7 @@ header.masthead {
   @media (min-width: 768px) {
     height: 100%;
     min-height: 600px;
+
     .header-content {
       position: absolute;
       top: 50%;
@@ -62,6 +64,13 @@ header.masthead {
           margin-left: auto;
         }
       }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .mySlides {
+      position: absolute;
+      height: 100%;
     }
   }
 }

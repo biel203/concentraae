@@ -27,7 +27,7 @@
   }
   .navbar-nav {
     > li.nav-item {
-       > a.nav-link:focus,
+      > a.nav-link:focus,
       > a.nav-link {
         font-size: 13px;
         font-weight: 700;
@@ -85,6 +85,14 @@
         &:hover {
           color: $theme-primary;
         }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .container {
+      .navbar-brand {
+        display: none;
       }
     }
   }

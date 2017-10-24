@@ -11,10 +11,11 @@
 header .custom-subtitle {
   font-family: sans-serif;
   text-transform: uppercase;
-  font-size: 21px; }
+  font-size: 21px;
+  color: #2babe6; }
 
 header.masthead img.header-background-logo {
-  width: 12%;
+  width: 120px;
   margin: 10px; }
 
 .container .service-box img {
@@ -166,6 +167,9 @@ body {
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
             color: #f06d30; } }
+  @media (max-width: 991px) {
+    #mainNav .container .navbar-brand {
+      display: none; } }
 
 header.masthead {
   position: relative;
@@ -221,6 +225,10 @@ header.masthead {
             max-width: 80%;
             margin-right: auto;
             margin-left: auto; } }
+  @media (max-width: 991px) {
+    header.masthead .mySlides {
+      position: absolute;
+      height: 100%; } }
 
 .service-box {
   max-width: 400px;

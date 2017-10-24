@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cab772b-d177-4bf6-9edc-d0adb3b56870" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/img/icons/wifi-simbol.svg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/creative.css" afterPath="$PROJECT_DIR$/client/css/creative.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/creative.min.css" afterPath="$PROJECT_DIR$/client/css/creative.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/scss/_custom.scss" afterPath="$PROJECT_DIR$/client/scss/_custom.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/scss/_masthead.scss" afterPath="$PROJECT_DIR$/client/scss/_masthead.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/scss/_navbar.scss" afterPath="$PROJECT_DIR$/client/scss/_navbar.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -150,12 +143,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="281" column="89" lean-forward="false" selection-start-line="281" selection-start-column="89" selection-end-line="281" selection-end-column="89" />
+            <state relative-caret-position="152">
+              <caret line="126" column="56" lean-forward="false" selection-start-line="126" selection-start-column="56" selection-end-line="126" selection-end-column="56" />
               <folding>
                 <element signature="n#button#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -508,7 +500,7 @@
       <workItem from="1508751766203" duration="10355000" />
       <workItem from="1508765901812" duration="14993000" />
       <workItem from="1508790505168" duration="928000" />
-      <workItem from="1508835423435" duration="5173000" />
+      <workItem from="1508835423435" duration="5969000" />
     </task>
     <task id="LOCAL-00001" summary="Troca do nome do projeto">
       <created>1496248344891</created>
@@ -528,7 +520,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70583000" />
+    <option name="totallyTimeSpent" value="71379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
@@ -866,12 +858,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="281" column="89" lean-forward="false" selection-start-line="281" selection-start-column="89" selection-end-line="281" selection-end-column="89" />
+        <state relative-caret-position="152">
+          <caret line="126" column="56" lean-forward="false" selection-start-line="126" selection-start-column="56" selection-end-line="126" selection-end-column="56" />
           <folding>
             <element signature="n#button#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
